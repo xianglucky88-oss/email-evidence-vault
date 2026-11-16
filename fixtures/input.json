@@ -1,0 +1,35 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "subject": "Case",
+      "from": "a@example.com",
+      "refs": [],
+      "body": "start",
+      "attachments": [
+        {
+          "name": "a.txt",
+          "content": "x"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "subject": "Re: Case",
+      "from": "b@example.com",
+      "refs": [
+        "m1"
+      ],
+      "body": "reply",
+      "attachments": [
+        {
+          "name": "a.txt",
+          "content": "x"
+        }
+      ]
+    }
+  ],
+  "holds": [
+    "m1"
+  ]
+}
