@@ -1,0 +1,393 @@
+{
+  "baseline": "v0.1.0",
+  "cases": {
+    "s01-missing-message-id": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [
+          "missing-message-id"
+        ],
+        "ignored_message_fields": [
+          "body",
+          "from",
+          "subject"
+        ],
+        "missing_ref_targets": [
+          "missing-message-id"
+        ],
+        "order_sensitive": false,
+        "phantom_roots": [
+          "missing-message-id"
+        ],
+        "self_reference_ids": []
+      },
+      "attachment_count": 0,
+      "attachment_digests": [],
+      "attachment_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "count_consistent": true,
+      "held_count": 1,
+      "hold_fingerprint": "adae2a0359db51a763a5c716d13f496b01877d9092a55863b8bd0cde577d7598",
+      "input_sha256": "470139779e4df79a43347d8d2f7b1b9564b9b8514a0f17ad69990d5fe868a5c4",
+      "oracle_attachment_count": 0,
+      "output_sha256": "51912a72ca93ac5e4c53f02d1f7af8ec626c5a222a1ac2ca39bda5819d084541",
+      "thread_count": 3,
+      "thread_fingerprint": "988dfbf1f1a7843ede6b98f202dd333325cb0feb364a5cfabab767c9a54ceb0f"
+    },
+    "s02a-cross-mailbox-duplicate": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {
+          "58100dc8fc06562ce3e578231dc948e083520ee49c4b4ee5a5a28bb4b4003feb": [
+            "copy.txt",
+            "evidence.txt"
+          ]
+        },
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [
+          "dup"
+        ],
+        "holds_not_matched": [],
+        "ignored_message_fields": [
+          "subject"
+        ],
+        "missing_ref_targets": [],
+        "order_sensitive": true,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 1,
+      "attachment_digests": [
+        "58100dc8fc06562ce3e578231dc948e083520ee49c4b4ee5a5a28bb4b4003feb"
+      ],
+      "attachment_fingerprint": "211e0bd0a353c18ee3b59dc389b5004bd2ed028f31ad4aa52d07d4012cb8fe36",
+      "count_consistent": true,
+      "held_count": 1,
+      "hold_fingerprint": "6a69dda46d73a6da278c659726ab277adc63f50deedd0561bd2c76fd61f729e9",
+      "input_sha256": "0fee4e11f6b05f0205559668204470bf7ad65a4997ba415915b4b36dad70eb8c",
+      "oracle_attachment_count": 1,
+      "output_sha256": "3e15b4a9b155830926b966175b575830526cd4d2cef3031aa910973cb3971172",
+      "thread_count": 2,
+      "thread_fingerprint": "b935277016322ff2d58e53b3ae987be9ba220745849100f2519ff1be0b32984f"
+    },
+    "s02b-cross-mailbox-duplicate-reversed": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {
+          "58100dc8fc06562ce3e578231dc948e083520ee49c4b4ee5a5a28bb4b4003feb": [
+            "copy.txt",
+            "evidence.txt"
+          ]
+        },
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [
+          "dup"
+        ],
+        "holds_not_matched": [],
+        "ignored_message_fields": [
+          "subject"
+        ],
+        "missing_ref_targets": [],
+        "order_sensitive": true,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 1,
+      "attachment_digests": [
+        "58100dc8fc06562ce3e578231dc948e083520ee49c4b4ee5a5a28bb4b4003feb"
+      ],
+      "attachment_fingerprint": "211e0bd0a353c18ee3b59dc389b5004bd2ed028f31ad4aa52d07d4012cb8fe36",
+      "count_consistent": true,
+      "held_count": 1,
+      "hold_fingerprint": "6a69dda46d73a6da278c659726ab277adc63f50deedd0561bd2c76fd61f729e9",
+      "input_sha256": "98296e3b04d62263489bb38a7939c18e3ca387efdf34df093f47e12cfb533d32",
+      "oracle_attachment_count": 1,
+      "output_sha256": "c296b61a7153b6a0c447a3b9a61dce73fb4bc2c8ea8fddb29836bc0071c32e19",
+      "thread_count": 2,
+      "thread_fingerprint": "0a523f2a3d8cae1407dc5dd8586b38a635ba3c5d0be2c3ad37940838bdf5387c"
+    },
+    "s03-attachment-addressing": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {
+          "0967115f2813a3541eaef77de9d9d5773f1c0c04314b0bbfe4ff3b3b1c55b5d5": [
+            "report-copy.txt",
+            "report.txt"
+          ]
+        },
+        "attachment_name_digest_reuse": {
+          "report.txt": [
+            "0967115f2813a3541eaef77de9d9d5773f1c0c04314b0bbfe4ff3b3b1c55b5d5",
+            "9d6f965ac832e40a5df6c06afe983e3b449c07b843ff51ce76204de05c690d11"
+          ]
+        },
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [],
+        "order_sensitive": false,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 3,
+      "attachment_digests": [
+        "0967115f2813a3541eaef77de9d9d5773f1c0c04314b0bbfe4ff3b3b1c55b5d5",
+        "4a99557e4033c3539de2eb65472017cad5f9557f7a0625a09f1c3f6e2ba69c4c",
+        "9d6f965ac832e40a5df6c06afe983e3b449c07b843ff51ce76204de05c690d11"
+      ],
+      "attachment_fingerprint": "d8302982526b337c542d6fc4af5da12bc0303839c086d4efbacbb9f0c9d6b2e0",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "7c5e0a8c59aa4541d2046151ee75235c3e6d549397c9669fe8af4dfec01f86d3",
+      "oracle_attachment_count": 3,
+      "output_sha256": "00527fe5043ff2ea639a3f9b438819689a91afe3f01ba0a1d346668a9babc1b1",
+      "thread_count": 3,
+      "thread_fingerprint": "8d39d677e079a20e4bb108a68ab9cad64e6bc20487453c59c8e96f672d0af6fa"
+    },
+    "s04a-hold-before": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [
+          "not-captured"
+        ],
+        "order_sensitive": false,
+        "phantom_roots": [
+          "not-captured"
+        ],
+        "self_reference_ids": []
+      },
+      "attachment_count": 1,
+      "attachment_digests": [
+        "a1d36ca8e1972206ea90a1898bcc3fed626a8f2bdfb0d0be4b84119f23f34670"
+      ],
+      "attachment_fingerprint": "fb99c5d9ed94195753dc6c8a32aff545190d133746b75042304c701d7254dae3",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "576ebbb9aba4baa18f782e182c95d60ed5340785fab5a7c91700365d618a513c",
+      "oracle_attachment_count": 1,
+      "output_sha256": "8cc44f4bf90169f23dd92deeb405e1c735a48d55641fa790c995c926a708c8ca",
+      "thread_count": 2,
+      "thread_fingerprint": "fecaca9dcca128b033d25cc10f0fbc517ed866a7a12deba4e0b616c312bd410a"
+    },
+    "s04b-hold-active": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [
+          "not-captured"
+        ],
+        "order_sensitive": false,
+        "phantom_roots": [
+          "not-captured"
+        ],
+        "self_reference_ids": []
+      },
+      "attachment_count": 1,
+      "attachment_digests": [
+        "a1d36ca8e1972206ea90a1898bcc3fed626a8f2bdfb0d0be4b84119f23f34670"
+      ],
+      "attachment_fingerprint": "fb99c5d9ed94195753dc6c8a32aff545190d133746b75042304c701d7254dae3",
+      "count_consistent": true,
+      "held_count": 1,
+      "hold_fingerprint": "3952b17fcb987ff88951e8f12aa4353356c90c0dce3128050bb3ceaceb12d5f4",
+      "input_sha256": "be958aabc7748c45a86b792ce0fb5174478d78970b92e226f2a68f365765bdbf",
+      "oracle_attachment_count": 1,
+      "output_sha256": "cf95a4f17bcb910bdd9196e1d842bfc299d9c7a6fe7002075c28bc8f9a149c29",
+      "thread_count": 2,
+      "thread_fingerprint": "fecaca9dcca128b033d25cc10f0fbc517ed866a7a12deba4e0b616c312bd410a"
+    },
+    "s04c-hold-after-release": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [
+          "not-captured"
+        ],
+        "order_sensitive": false,
+        "phantom_roots": [
+          "not-captured"
+        ],
+        "self_reference_ids": []
+      },
+      "attachment_count": 1,
+      "attachment_digests": [
+        "a1d36ca8e1972206ea90a1898bcc3fed626a8f2bdfb0d0be4b84119f23f34670"
+      ],
+      "attachment_fingerprint": "fb99c5d9ed94195753dc6c8a32aff545190d133746b75042304c701d7254dae3",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "576ebbb9aba4baa18f782e182c95d60ed5340785fab5a7c91700365d618a513c",
+      "oracle_attachment_count": 1,
+      "output_sha256": "8cc44f4bf90169f23dd92deeb405e1c735a48d55641fa790c995c926a708c8ca",
+      "thread_count": 2,
+      "thread_fingerprint": "fecaca9dcca128b033d25cc10f0fbc517ed866a7a12deba4e0b616c312bd410a"
+    },
+    "s05-ref-chain-forward": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [
+          "body",
+          "subject"
+        ],
+        "missing_ref_targets": [
+          "ghost"
+        ],
+        "order_sensitive": false,
+        "phantom_roots": [
+          "ghost"
+        ],
+        "self_reference_ids": []
+      },
+      "attachment_count": 0,
+      "attachment_digests": [],
+      "attachment_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "c0b042df6a6a053dcef3653e200ca8462313220a9b576a003b3874d4bce12984",
+      "oracle_attachment_count": 0,
+      "output_sha256": "011b45425ab0eae5d7171836967af8b38b7f1f57c553bf0098678b397a3cca91",
+      "thread_count": 2,
+      "thread_fingerprint": "16425c749e64bd2ff740e1402286da7ecadbf3a26811fb113a5b6b9ac2364408"
+    },
+    "s06-cycle": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [
+          "a",
+          "b"
+        ],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [],
+        "order_sensitive": false,
+        "phantom_roots": [],
+        "self_reference_ids": [
+          "self"
+        ]
+      },
+      "attachment_count": 0,
+      "attachment_digests": [],
+      "attachment_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "1d5e92386cec8b37f55f3d4ebb9fdee4acef10125e28ca839d296cda1695ccf7",
+      "oracle_attachment_count": 0,
+      "output_sha256": "0d4acdae5f560d3270e2580a8566af67cedae92c409f86a72c597300c5d21858",
+      "thread_count": 3,
+      "thread_fingerprint": "8b9edac44c08752134218acd5ca08a50f5377e9c687f827a26a4c119d284f0ee"
+    },
+    "s07a-no-date-fields": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [
+          "from",
+          "subject"
+        ],
+        "missing_ref_targets": [],
+        "order_sensitive": false,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 0,
+      "attachment_digests": [],
+      "attachment_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "4e1f5b25608d1a944dd1a3dc61dc88c7e8fa3aec9742a16333d866dafcb4c13f",
+      "oracle_attachment_count": 0,
+      "output_sha256": "6062d86ced200d32234d127eec5f49f0fe2d7f6cb6f7f13da737e110747e0d28",
+      "thread_count": 1,
+      "thread_fingerprint": "f12ccde8f8913c42f1f750e8c115f437ea3f5a6acafe99992609feb2a22add86"
+    },
+    "s07b-timezone-missing": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [
+          "from",
+          "sent_at",
+          "subject"
+        ],
+        "missing_ref_targets": [],
+        "order_sensitive": false,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 0,
+      "attachment_digests": [],
+      "attachment_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "fb87019d003fb241dbf2e17ca9a87d6dec66aac817696ec50206de5f79a446d5",
+      "oracle_attachment_count": 0,
+      "output_sha256": "6062d86ced200d32234d127eec5f49f0fe2d7f6cb6f7f13da737e110747e0d28",
+      "thread_count": 1,
+      "thread_fingerprint": "f12ccde8f8913c42f1f750e8c115f437ea3f5a6acafe99992609feb2a22add86"
+    },
+    "s08-unicode-normalization": {
+      "anomalies": {
+        "attachment_digest_name_conflicts": {},
+        "attachment_name_digest_reuse": {},
+        "cycle_ids": [],
+        "duplicate_ids": [],
+        "holds_not_matched": [],
+        "ignored_message_fields": [],
+        "missing_ref_targets": [],
+        "order_sensitive": false,
+        "phantom_roots": [],
+        "self_reference_ids": []
+      },
+      "attachment_count": 2,
+      "attachment_digests": [
+        "4a99557e4033c3539de2eb65472017cad5f9557f7a0625a09f1c3f6e2ba69c4c",
+        "bf12767b0f2a56b2190075bae8169f656e3ce8d6357d4aff184bc6c7ea48f9f6"
+      ],
+      "attachment_fingerprint": "4602870701c2c91eaeebf6f466531a5525bbeac02066e75ecd4fa778f401a57e",
+      "count_consistent": true,
+      "held_count": 0,
+      "hold_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input_sha256": "c488732796d4464f386daca0b20921b6f60cdb41b57e0f2e2d876c849f1fc94b",
+      "oracle_attachment_count": 2,
+      "output_sha256": "5a1b7879040565c5923e94969fc851563561c3e5b29131a5fe3fba2bd3729da2",
+      "thread_count": 1,
+      "thread_fingerprint": "d5c0ee219e661b92f4e95ab997f6a88b2dd4a34c9e9fc9fd1f2cd60fe2446b56"
+    }
+  },
+  "rules_sha256": "05c64c0041cf1e4ce790a8a6932d328e51fcd1d084d8c70ae813edf5fccede06",
+  "schema": "evidence-index-manifest/v1"
+}

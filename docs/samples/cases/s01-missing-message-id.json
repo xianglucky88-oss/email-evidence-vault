@@ -1,0 +1,37 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "subject": "Case",
+      "from": "alice@example.com",
+      "refs": [],
+      "body": "start",
+      "attachments": []
+    },
+    {
+      "id": "m2",
+      "subject": "Re: Case",
+      "from": "bob@example.com",
+      "refs": ["m1"],
+      "body": "reply",
+      "attachments": []
+    },
+    {
+      "id": "m3",
+      "subject": "Re: Case",
+      "from": "carol@example.com",
+      "refs": ["missing-message-id"],
+      "body": "orphan reply whose parent was not captured",
+      "attachments": []
+    },
+    {
+      "id": "m4",
+      "subject": "Case",
+      "from": "dave@example.com",
+      "refs": [],
+      "body": "same subject but unrelated; subject must not join threads",
+      "attachments": []
+    }
+  ],
+  "holds": ["m1", "missing-message-id"]
+}

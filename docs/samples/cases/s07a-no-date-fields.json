@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "subject": "Case",
+      "from": "alice@example.com",
+      "refs": [],
+      "attachments": []
+    },
+    {
+      "id": "m2",
+      "subject": "Re: Case",
+      "from": "bob@example.com",
+      "refs": ["m1"],
+      "attachments": []
+    }
+  ],
+  "holds": []
+}

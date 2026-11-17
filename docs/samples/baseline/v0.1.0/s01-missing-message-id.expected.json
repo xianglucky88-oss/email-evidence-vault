@@ -1,0 +1,20 @@
+{
+  "attachment_count": 0,
+  "held_messages": [
+    "m1"
+  ],
+  "project": "email-evidence-vault",
+  "status": "ok",
+  "threads": {
+    "m1": [
+      "m1",
+      "m2"
+    ],
+    "m4": [
+      "m4"
+    ],
+    "missing-message-id": [
+      "m3"
+    ]
+  }
+}

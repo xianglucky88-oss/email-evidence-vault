@@ -1,0 +1,29 @@
+{
+  "messages": [
+    {
+      "id": "root-a",
+      "subject": "Root A",
+      "refs": [],
+      "attachments": []
+    },
+    {
+      "id": "root-b",
+      "subject": "Root B",
+      "refs": [],
+      "attachments": []
+    },
+    {
+      "id": "dup",
+      "subject": "Re: Root A",
+      "refs": ["root-a"],
+      "attachments": [{"name": "copy.txt", "content": "same bytes"}]
+    },
+    {
+      "id": "dup",
+      "subject": "Re: Root B",
+      "refs": ["root-b"],
+      "attachments": [{"name": "evidence.txt", "content": "same bytes"}]
+    }
+  ],
+  "holds": ["dup"]
+}

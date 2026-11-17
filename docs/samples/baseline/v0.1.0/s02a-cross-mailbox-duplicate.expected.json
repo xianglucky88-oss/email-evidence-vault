@@ -1,0 +1,18 @@
+{
+  "attachment_count": 1,
+  "held_messages": [
+    "dup"
+  ],
+  "project": "email-evidence-vault",
+  "status": "ok",
+  "threads": {
+    "root-a": [
+      "dup",
+      "dup",
+      "root-a"
+    ],
+    "root-b": [
+      "root-b"
+    ]
+  }
+}

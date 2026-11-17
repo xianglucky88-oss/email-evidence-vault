@@ -1,0 +1,27 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "refs": [],
+      "attachments": [
+        {"name": "report.txt", "content": "same"},
+        {"name": "report-copy.txt", "content": "same"}
+      ]
+    },
+    {
+      "id": "m2",
+      "refs": [],
+      "attachments": [
+        {"name": "report.txt", "content": "different"}
+      ]
+    },
+    {
+      "id": "m3",
+      "refs": [],
+      "attachments": [
+        {"name": "证据.txt", "content": "é"}
+      ]
+    }
+  ],
+  "holds": []
+}

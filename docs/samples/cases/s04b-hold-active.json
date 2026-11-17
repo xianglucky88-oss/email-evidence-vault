@@ -1,0 +1,20 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "refs": [],
+      "attachments": []
+    },
+    {
+      "id": "m2",
+      "refs": ["m1"],
+      "attachments": [{"name": "evidence.txt", "content": "held attachment"}]
+    },
+    {
+      "id": "m3",
+      "refs": ["not-captured"],
+      "attachments": []
+    }
+  ],
+  "holds": ["m2"]
+}

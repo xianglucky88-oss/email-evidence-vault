@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "id": "m1",
+      "refs": [],
+      "attachments": [
+        {
+          "name": "composed.txt",
+          "content": "é"
+        },
+        {
+          "name": "decomposed.txt",
+          "content": "é"
+        }
+      ]
+    }
+  ],
+  "holds": []
+}

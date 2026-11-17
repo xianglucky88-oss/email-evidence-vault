@@ -1,0 +1,33 @@
+{
+  "messages": [
+    {
+      "id": "root",
+      "subject": "Original",
+      "refs": [],
+      "body": "original",
+      "attachments": []
+    },
+    {
+      "id": "mid",
+      "subject": "Re: Original",
+      "refs": ["root"],
+      "body": "reply",
+      "attachments": []
+    },
+    {
+      "id": "leaf",
+      "subject": "Fwd: Re: Original",
+      "refs": ["root", "mid"],
+      "body": "forwarded reply; no embedded message is modeled",
+      "attachments": []
+    },
+    {
+      "id": "other",
+      "subject": "Re: Original",
+      "refs": ["root", "mid", "ghost"],
+      "body": "last ref wins even though a valid chain exists",
+      "attachments": []
+    }
+  ],
+  "holds": []
+}

@@ -1,0 +1,17 @@
+{
+  "attachment_count": 3,
+  "held_messages": [],
+  "project": "email-evidence-vault",
+  "status": "ok",
+  "threads": {
+    "m1": [
+      "m1"
+    ],
+    "m2": [
+      "m2"
+    ],
+    "m3": [
+      "m3"
+    ]
+  }
+}

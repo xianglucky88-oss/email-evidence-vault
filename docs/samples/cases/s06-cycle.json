@@ -1,0 +1,25 @@
+{
+  "messages": [
+    {
+      "id": "a",
+      "refs": ["b"],
+      "attachments": []
+    },
+    {
+      "id": "b",
+      "refs": ["a"],
+      "attachments": []
+    },
+    {
+      "id": "self",
+      "refs": ["self"],
+      "attachments": []
+    },
+    {
+      "id": "tail",
+      "refs": ["a"],
+      "attachments": []
+    }
+  ],
+  "holds": []
+}
